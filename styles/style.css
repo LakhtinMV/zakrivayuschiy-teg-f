@@ -79,7 +79,7 @@
 }
 
 .content {
-  width: min(100%, 700px);
+  inline-size: min(100%, 700px);
   margin-block-start: 1px;
 }
 
@@ -333,15 +333,15 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: clamp(306px, 81.5%, 335px);
+  inline-size: clamp(306px, 81.5%, 335px);
   margin: 50px auto;
   padding: 15px 18px;
   text-align: center;
 }
 
 .footer__logo {
-  width: 28px;
-  height: 28px;
+  inline-size: 28px;
+  block-size: 28px;
 }
 
 @media (width > 375px) {
@@ -351,8 +351,8 @@
   }
 
   .footer__logo {
-    width: 21px;
-    height: 21px;
+    inline-size: 21px;
+    block-size: 21px;
   }
 }
 
@@ -376,8 +376,8 @@
 }
 
 .dialog__logo {
-  width: 39px;
-  height: 39px;
+  inline-size: 39px;
+  block-size: 39px;
 }
 
 .dialog__button {
