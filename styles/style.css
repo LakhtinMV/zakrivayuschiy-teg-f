@@ -48,10 +48,7 @@
 }
 
 .header {
-  font-family: var(--accent-font);
-}
-
-.header {
+  font-family: var(--accent-font, 'Press Start 2P'), fantasy;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -71,7 +68,7 @@
 }
 
 .header__logo {
-  margin-bottom: 20px;
+  margin-block-end: 20px;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
 
@@ -182,20 +179,19 @@
 
 .card__content-conteiner {
   padding: 25px;
-  font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 21px;
 }
 
 .card__memories {
-  margin-top: 27px;
+  margin-block-start: 27px;
 }
 
 .card__like-aria {
   display: flex;
   justify-content: flex-end;
-  margin-top: 25px;
+  margin-block-start: 25px;
 }
 
 .button {
