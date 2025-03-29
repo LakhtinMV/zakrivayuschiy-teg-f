@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-block-end: 103px;
   font-family: var(--main-font, "Inter-Variable"), sans-serif;
   background-color: var(--background-color, #fff);
   background-image: var(--gradient-image);
@@ -21,11 +22,9 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: "wght" var(--content-weight, 400);
-  margin-block-end: 103px;
 }
 
 .header {
-  font-family: var(--accent-font, 'Press Start 2P'), fantasy;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -34,6 +33,7 @@
   margin: 100px 0;
   border: 2px solid #000;
   padding: 120px 14px;
+  font-family: var(--accent-font, "Press Start 2P"), fantasy;
   background-color: var(--background-color, #fff);
 }
 
@@ -56,8 +56,8 @@
 }
 
 .content {
-  inline-size: min(100%, 700px);
   margin-block-start: 1px;
+  inline-size: min(100%, 700px);
 }
 
 .content__cards-list {
@@ -82,6 +82,7 @@
   border-block-start: 2px solid var(--accent-color, #000);
   border-block-end: 2px solid var(--accent-color, #000);
   font-size: 0;
+  margin: 0;
 }
 
 .card__image {
@@ -176,8 +177,8 @@
   border: 2px solid var(--accent-color, #000);
   overflow: hidden;
   background-color: var(--background-color, #fff);
-  cursor: pointer;
   transition: box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 button::before {
@@ -198,8 +199,8 @@ button::before {
   display: flex;
   align-items: center;
   border: none;
-  transition: outline 0.3s ease;
   background-color: var(--background-color, #fff);
+  transition: outline 0.3s ease;
   cursor: pointer;
 }
 
@@ -230,10 +231,10 @@ button::before {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  inline-size: clamp(306px, 81.5%, 335px);
   margin: 50px auto 0;
   padding: 15px 18px;
   text-align: center;
+  inline-size: clamp(306px, 81.5%, 335px);
 }
 
 .footer__logo {
